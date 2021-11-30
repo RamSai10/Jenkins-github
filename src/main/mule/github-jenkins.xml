@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="github-jenkinsFlow" doc:id="c5f0ad22-9be6-475f-8521-78012ca1a6b3" >
 		<http:listener doc:name="Listener" doc:id="cf244bd3-bcc8-45ff-bdc8-a88dd2958b8e" config-ref="HTTP_Listener_config" path="/github"/>
 		<set-payload value='#["hi Ram"]' doc:name="Set Payload" doc:id="52dab348-b992-48af-9269-803259c26080" />
+		<logger level="INFO" doc:name="Logger" doc:id="c694abd1-0859-43f4-bdf2-0210c3249346" message="#[payload]"/>
 	</flow>
 </mule>
