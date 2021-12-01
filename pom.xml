@@ -25,6 +25,19 @@
 				<version>3.0.0</version>
 			</plugin>
 			<plugin>
+			<configuration>
+			<cloudHubDeployment>
+			<username>Ram4848</username>
+			<password>Ram@4848</password>
+			<environment>Sandbox</environment>
+			<workers>1</workers>
+			<workerType>Micro</workerType>
+			<applicationName>First-app-Deployment</applicationName>
+			<muleVersion>4.3.0</muleVersion>
+			</cloudHubDeployment>
+			</configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
