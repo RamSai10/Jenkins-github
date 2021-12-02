@@ -23,9 +23,16 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>3.0.0</version>
+			
+			
+			
 			</plugin>
 			<plugin>
-			<configuration>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>${mule.maven.plugin.version}</version>
+				<extensions>true</extensions>
+                        <configuration>
 			<cloudHubDeployment>
 			<username>Ram4848</username>
 			<password>Ram@4848</password>
@@ -36,12 +43,6 @@
 			<muleVersion>4.3.0</muleVersion>
 			</cloudHubDeployment>
 			</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
 			</plugin>
 		</plugins>
 	</build>
